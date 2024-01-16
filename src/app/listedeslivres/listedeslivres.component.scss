@@ -1,0 +1,39 @@
+:host {
+    background-color: rgb(188, 223, 188);
+    display:block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    ul {
+        list-style-type: none;
+        li {
+            &:nth-child(even) {
+                background: rgb(236, 252, 229);
+            }
+            &:nth-child(odd) {
+                background: rgb(236, 234, 244);
+            }
+            padding: 10px;
+            width: fit-content;
+            border-bottom: 2px solid rgb(218, 172, 230);
+            table {
+                width: 500px;
+
+                tr {
+                    td {
+                        text-align: center;
+
+                        h2 {
+                            font-size: 1.1em;
+                        }
+                        p {
+                            text-align: justify;
+                        }
+                        img {
+                            margin: 5px;
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
