@@ -1,0 +1,11 @@
+
+<div *ngIf="meteox != undefined">
+<h1>{{meteox.city_info.name}}</h1>
+<p>{{meteox.current_condition.date}} | {{meteox.current_condition.hour}}</p>
+<p><img src="https://static.vecteezy.com/system/resources/thumbnails/012/903/764/small/doodle-freehand-drawing-of-france-map-free-png.png" width="160px" height="170px"/></p>
+<p><img src="{{meteox.current_condition.icon}}"/>{{meteox.current_condition.tmp}}°C</p>
+<p>Conditions actuelles : {{meteox.current_condition.condition}}</p>
+<!--<p><img src="{{meteox.current_condition.icon_big}}"/></p>-->
+
+</div>
+<app-culturalevent></app-culturalevent>

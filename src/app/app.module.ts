@@ -5,14 +5,16 @@ import localeFr from '@angular/common/locales/fr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListedeslivresComponent } from './listedeslivres/listedeslivres.component';
+import { meteolourdesComponent } from './meteolourdes/meteolourdes.component';
 import { registerLocaleData } from '@angular/common';
+import { culturaleventComponent } from './culturalevent/culturalevent.component';
 registerLocaleData(localeFr, 'fr');
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListedeslivresComponent
+    meteolourdesComponent,
+    culturaleventComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<h2>Vos évènements à proximité :</h2>
+<div *ngIf="evenements.length > 0 ; else noEvent">
+    <ul>
+        <li *ngFor="let event of evenements">
+            <div>
+                <p>{{event.commune}} : {{event.nom_manifestation}} : du {{event.datedebut}} au {{event.datefin}} , à partir de
+                    {{event.heuredebut1}} et jusqu'à {{event.heurefin1}}</p>
+                <p>{{event.categorie}}, {{event.theme}}</p>
+                <p><span *ngIf="event.site_web != null; else empty">
+                        <a href="{{event.site_web}}">site web</a></span></p>
+                <p><img src="{{event.photos}}" width="50px" /></p>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<ng-template #empty></ng-template>
+<ng-template #noEvent>Il n'y a pas d'événement aujourd'hui.</ng-template>
+
+
